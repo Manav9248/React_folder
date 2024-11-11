@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-error{
+    border: 2px solid rgb(127, 3, 3);
+}
+.error-msg{
+    color: rgb(146, 5, 5);
+}
