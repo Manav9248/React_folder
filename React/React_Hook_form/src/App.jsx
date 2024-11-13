@@ -9,7 +9,7 @@ const App = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm();
+  } = useForm();  // useForm used
 
 
  async function onSubmit_fun(data){

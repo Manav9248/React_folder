@@ -1,24 +1,28 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { act } from "react";
 
 const initialState = { //objects {}
-    todos:[{id:1,text:"Hello guys"}]
+
+    todos:[   // arrays []
+        {id:1,
+        text:"Hello guys"}
+    ]
 }
 
 export const todoSlice = createSlice({
-    name:'todo',
-    initialState,
+    name:'todoSlice',
+    initialState, //it defines the starting values of object which is created
 
     reducers:{ // properties and functions comes in reducers
-        addTodo: (state,action) => { // it's like a stae hook, 2 parameters always comes in it.
+
+        addTodo: (state,action) => { // it's like a state hook, 2 parameters always comes in it.
            const todo = {
-            id:nanoid(),
-            text: action.payload  // playload is a object
+            id:nanoid(), // it generates unique,random ids.
+            text: action.payload  // playload is an action object
            }
-           state.todos.push(todo)            
+           state.todos.push(todo) // initial stage -> state          
         }, 
 
-        removeTodo: (state,action) => {
+        removeTodo: (state,action) => { // function for removing todo
            state.todos = state.todos.filter((todo)=>
         todo.id !== action.payload)
         },

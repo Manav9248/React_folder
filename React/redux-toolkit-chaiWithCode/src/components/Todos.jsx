@@ -11,14 +11,13 @@ const Todos = () => {
   return (
     <>
     <div>Todos</div>
-    {todos.map((todo)=>(
-        <li className=''
-         key={todo.id}>
-            {todo.text}
+
+    {todos.map((todo)=>( // map function
+
+     <li key={todo.id}> {todo.text} 
 
 
-    <button onClick={()=>dispatch(removeTodo(todo.id))}
-  >X</button>
+    <button onClick={()=>dispatch(removeTodo(todo.id))}>X</button>
         </li>
     ))}
     </>

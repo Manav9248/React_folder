@@ -5,10 +5,11 @@ import { decrement, increment,incrementByAmount,reset } from './features/counter
 
 function App() {
 
-  const [amount,setAmount] = useState('');
+  const [amount,setAmount] = useState(''); // state hook
 
-  const count = useSelector((state)=> state.counter.value);
-  const dispatch = useDispatch();
+  const count = useSelector((state)=> state.counter.value); // when user want to select value from store
+
+  const dispatch = useDispatch();// when user send the action or value to the store from components
 
 
   function handleIncrementClick(){ // Increment count
