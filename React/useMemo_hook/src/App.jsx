@@ -7,7 +7,7 @@ function App() {
 const [count, setCount] = useState(0);
 const [input, setInput] = useState(0);
 
-function expensiveTask(num) {
+function expensiveTask(num) {  // function
   console.log("Inside Expensive Task")
 
   for(let i=0; i<=10000000; i++){
