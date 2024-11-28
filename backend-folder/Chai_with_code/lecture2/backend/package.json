@@ -1,0 +1,19 @@
+{
+  "name": "lecture2",
+  "version": "1.0.0",
+  "description": "learning backend",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "manav pal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
