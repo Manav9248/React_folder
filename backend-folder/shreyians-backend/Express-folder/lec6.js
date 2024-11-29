@@ -10,7 +10,7 @@ app.set('view engine',"ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
-//linking css
+//linking css and js
 app.use(express.static('public'))
 
 app.get('/',(req,res)=>{
