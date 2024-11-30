@@ -1,3 +1,5 @@
+//by using user model, we can create, read, delte and update
+
 const mongoose = require('mongoose');
 
 
