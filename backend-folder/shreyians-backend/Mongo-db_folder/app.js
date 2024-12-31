@@ -47,7 +47,7 @@ app.post('/register',async(req,res)=>{
 // Read operation
 app.get('/get-users',(req,res)=>{
     userModel.find({ //findOne method :- this return only one user or data
-        username:'alpha', // condition apllying...
+        // username:'alpha', // condition apllying...
         // password:'123',
     }).then((users)=>{
         res.send(users); //sending all the user on frontend which is save on backend
@@ -69,7 +69,7 @@ app.get('/delete-user', async(req,res)=>{
     await userModel.findOneAndDelete({
         username:'manav'
     })
-    res.send("Delete successfully")
+    res.send("Delete successfully ")
 })
 
 app.get('/home',(req,res)=>{

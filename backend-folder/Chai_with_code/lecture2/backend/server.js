@@ -25,17 +25,17 @@ app.get('/api/jokes',(req,res)=>{
         },
         {
             id:3,
-            title: 'A third joke',
+            title: 'A 3rd joke',
             content: 'This is a third  joke'
         },
         {
             id:4,
-            title: 'A fourth joke',
+            title: 'A 4th joke',
             content: 'This is a fourth joke'
         },
         {
             id:5,
-            title: 'A fifth joke',
+            title: 'A 5th joke',
             content: 'This is a fifth joke'
         },
     ];
