@@ -10,7 +10,7 @@ const subTodoSchema = new mongoose.Schema({
     type:Boolean,
     default:false
   },
-  createdBy:{
+  createdBy:{ // tracking the user 
     type: mongoose.Schema.Types.ObjectId,
     ref:"user"
   }
