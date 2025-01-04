@@ -22,7 +22,7 @@ const TodoSchema = new mongoose.Schema({
         }
     ] // Array of sub-todos
     
-},{timestamps:true});
+},{timestamps:true}); // timestamps tell when the object created and updated
 
 
 const Todo = mongoose.model("todo",TodoSchema);
