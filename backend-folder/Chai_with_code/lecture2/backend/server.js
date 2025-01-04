@@ -11,7 +11,7 @@ const app = express();
 
 app.get('/api/jokes',(req,res)=>{
 
-    const jokes = [ // array
+    const jokes = [ // arrays of object
         {
             // object
             id:1,
