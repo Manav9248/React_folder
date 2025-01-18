@@ -10,6 +10,7 @@
 
 
 
+
 const express = require('express')
 const path = require('path')
 const app = express();
@@ -30,7 +31,15 @@ app.get('/',(req,res)=>{
     res.render("index") // views->index.ejs running
 })
 
+// creating dynamic routes
+app.get('/profile/:username/:age',(req,res)=>{
 
+  const user = req.params.username // req.params ka matlb hotta hai jiska aage : lgga hua hai
+
+  const userAge = req.params.age
+
+    res.send(`This is ${user} Page and the user age is ${userAge} `)
+})
 
 
 //listen port
