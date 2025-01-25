@@ -27,7 +27,7 @@ app.get('/profile',(req,res) =>{
 
 //if we dont want to show data in url then we use post method,don't use get method
 
-// post -> frontend sa data backend tak pochane ka liye..
+// post -> frontend sa data backend ya phir server tak pochane ka liye..
 // get -> server sa data frontend tak pochane ka liye..
 
 app.post('/get-form-data',(req,res)=>{
