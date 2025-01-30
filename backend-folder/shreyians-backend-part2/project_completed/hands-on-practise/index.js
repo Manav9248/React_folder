@@ -100,6 +100,8 @@ app.post('/edit', (req, res) => {
         });
     });
 
+    
+
   // rendering the page, writng the files
 app.post('/create',(req,res)=>{
     fs.writeFile(`./files/${req.body.title.split(' ').join('')}`,req.body.details,(err)=>{

@@ -1,0 +1,21 @@
+Backend has 2 servers that is Application server and Database server.
+
+Database -> collections -> Documents
+
+
+
+CODE                DATABASE
+--------------------------------------
+monggose.connect -> database create
+
+model create ->   collection create
+
+CREATE ->        document create
+
+-------------------------------------
+
+collections --> Amazom company ka user data, sales data, product data, or others data ko collections khenga.
+
+
+documents --> collections ka ek user ka databse ko documents khenga.
+
