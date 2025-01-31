@@ -6,13 +6,22 @@ const express = require('express');
 const app = express();
 const bcrypt = require('bcrypt')
 
+//using jwt
+const jwt = require('jsonwebtoken');
+
+
+
+
+
+
+
 //middleware for using cookie-parser
 app.use(cookieParser());
 
 
 
 // route page
-app.get('/',(req,res)=>{
+app.get('/index',(req,res)=>{
     // res.cookie("name","Manav");
 
     bcrypt.genSalt(10,(err,salt)=>{
@@ -28,8 +37,23 @@ app.get('/',(req,res)=>{
     })
 })
 
+app.get("/",(req,res)=>{
+  const token =  jwt.sign({email:"manav@gmail.com"},"secret"); 
 
+  res.cookie("token",token);
 
+//   console.log(token);
+  res.send("Done");
+})
+
+app.get("/read",(req,res)=>{
+    console.log(req.cookies.token);
+
+    const dataVerify = jwt.verify(req.cookies.token,"secret");
+
+    console.log(dataVerify);
+
+})
 
 
 
