@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
- <link rel="stylesheet" href="/stylesheets/style.css">
+ <link rel="stylesheet" href="stylesheets/style.css">
+ <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    <div class="text-white bg-gray-800">hey</div>
+    <div class="w-full h-screen  bg-zinc-900 ">
+
+        <form method="post" action="/create" class="flex flex-col  gap-4 items-between font-semibold h-[17rem] p-4"
+        >
+
+        <input type="text" name="username" placeholder="Enter Username"
+        class="h-[2.3rem] w-[15rem] text-center bg-yellow-200
+        text-black border-none hover:bg-yellow-300">
+
+        <input type="email" name="email" placeholder="Enter Email"
+        class=" h-[2.3rem] w-[15rem] text-center bg-yellow-200
+        text-black border-none hover:bg-yellow-300">
+
+        <input type="password" name="password" placeholder="Enter Password"
+        class=" h-[2.3rem] w-[15rem] text-center bg-yellow-200
+        text-black border-none hover:bg-yellow-300">
+
+        <input type="number" name="age" placeholder="Enter Age"
+        class=" h-[2.3rem] text-center bg-yellow-200
+        text-black w-[15rem] hover:bg-yellow-300" >
+
+        <div class="flex flex-col items-center w-[16rem]">
+
+            <input type="submit"
+            value="Create user"
+            class="w-[5.5rem] h-[1.8rem] bg-green-600
+            hover:bg-green-800 
+            rounded-md w-[15rem]
+            ">
+        </div>
+    
+    
+    
+    </form>
+
+    </div>
 </body>
 </html>
