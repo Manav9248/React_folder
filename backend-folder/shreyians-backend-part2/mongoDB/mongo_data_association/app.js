@@ -47,11 +47,6 @@ app.get('/post/create',async(req,res)=>{
 })
 
 
-
-
-
-
-
 app.listen(4000,()=>{
     console.log("Port is running on 4000")
 })

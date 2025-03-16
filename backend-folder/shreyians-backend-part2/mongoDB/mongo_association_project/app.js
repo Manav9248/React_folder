@@ -67,6 +67,9 @@ app.get("/edit/:id",isLoggedIn,async(req,res)=>{
 
 const updateUser = await postModel.findOne({_id:userId}).populate("user");
 
+
+// console.log("update user content : ",updateUser.content);
+
 res.render("update",{updateUser});
 
 });
@@ -172,6 +175,7 @@ function isLoggedIn(req, res, next) {
   }
   next();
 }
+
 
 
 

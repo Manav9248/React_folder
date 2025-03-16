@@ -10,11 +10,6 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken');
 
 
-
-
-
-
-
 //middleware for using cookie-parser
 app.use(cookieParser());
 
@@ -54,17 +49,6 @@ app.get("/read",(req,res)=>{
     console.log(dataVerify);
 
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 app.listen(3000,()=>{
