@@ -179,6 +179,6 @@ function isLoggedIn(req, res, next) {
 
 
 
-app.listen(3000, () => {
-  console.log("Port is running on 3000");
+app.listen(2000, () => {
+  console.log("Port is running on 2000");
 });

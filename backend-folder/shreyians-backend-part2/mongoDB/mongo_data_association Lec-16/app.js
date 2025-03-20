@@ -5,8 +5,6 @@ const userModel = require('./models/user.models');
 const postModel = require("./models/post.models");
 
 
-
-
 app.get("/",(req,res)=>{
     res.send("hello guys");
 })

@@ -22,13 +22,13 @@ app.get('/index',(req,res)=>{
     bcrypt.genSalt(10,(err,salt)=>{
         // this is a encrypt method
         bcrypt.hash('password',salt,(err,hash)=>{
-        console.log(hash);
+        console.log("hash :- ",hash);
         });
     });
 
     //comparing, or checking the password
     bcrypt.compare("password","$2b$10$EUI3dYqvmAAmuyqYMuLJuOCJ42SKV1jaLlCNbeKwGIPonGcjcKKMS",(err,result)=>{
-        console.log(result);
+        console.log("result :- ",result);
     })
 })
 
