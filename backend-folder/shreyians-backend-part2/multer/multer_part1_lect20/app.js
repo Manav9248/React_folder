@@ -7,12 +7,13 @@ const crypto = require('crypto');
 const path = require("path");
 
 //middleware using
-app.use(express.json());
+app.use(express.json()); // this middleware converts, json request bodies into a javascript object(req.body)
 app.use(express.urlencoded({extended:true}));
 
 
 
-const storage = multer.diskStorage({
+const storage = multer.diskStorage({ // In disk storage, we usually storing files in local machine
+
   //in destination we mention files location 
   destination : function(req,file,cb){
     cb(null,'./public/images/uploads')
