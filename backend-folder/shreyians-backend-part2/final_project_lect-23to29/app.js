@@ -10,6 +10,7 @@ const db = require('./config/mongoose.connection');
 const ownersRouter = require('./routes/ownersRouter');
 const usersRouter = require('./routes/usersRouter');
 const productsRouter = require('./routes/productsRouter');
+const indexRouter = require('./routes/index');
 
 //middleware
 app.use(express.json());
@@ -24,6 +25,7 @@ app.set("view engine","ejs");
 app.use("/owners",ownersRouter);
 app.use("/users",usersRouter);
 app.use("/products",productsRouter);
+app.use("/",indexRouter);
 
 
 

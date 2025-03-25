@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 
 //userschema define
 const ownerSchema  = mongoose.Schema({
-    fullname:String,
+    fullname:{
+    type: String,
+    minLength:3,
+    trim:true,
+},
     email:String,
     password:String,
     products: {
@@ -10,7 +14,7 @@ const ownerSchema  = mongoose.Schema({
         default:[]
     },
     picture: String,
-    gstin:Number
+    gstin:String
 });
 
 // exporting file
